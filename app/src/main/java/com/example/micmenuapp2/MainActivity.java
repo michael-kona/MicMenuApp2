@@ -1,6 +1,7 @@
 package com.example.micmenuapp2;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -21,6 +22,15 @@ TextView txtv;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ActionBar ab=getSupportActionBar();
+
+        ab.setTitle("AI");
+        ab.setSubtitle("Artificial Intelligence");
+        ab.setIcon(R.drawable.pc);
+        ab.setDisplayUseLogoEnabled(true);
+        ab.setDisplayShowHomeEnabled(true);
+
         imgv=findViewById(R.id.imageView);
         registerForContextMenu(imgv);
     }

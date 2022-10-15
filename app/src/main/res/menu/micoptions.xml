@@ -2,7 +2,7 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Pakistan" android:id="@+id/pak"/>
+    <item android:title="Pakistan" android:id="@+id/pak" app:showAsAction="ifRoom" android:icon="@drawable/ai_1"/>
     <item android:title="Bangladesh" android:id="@+id/bg"></item>
     <item android:title="India" android:id="@+id/ind">
         <menu>
